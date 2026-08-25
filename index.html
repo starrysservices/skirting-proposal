@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Joy — The Skirting Upgrade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #d9cfb4;
+    --slate: #5c6268;
+    --slate-dark: #3c4045;
+    --charcoal: #22201c;
+    --cream: #f4efe2;
+    --rust: #a9542f;
+    --rust-light: #c96b3f;
+    --line: rgba(244,239,226,0.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { 
+    background: var(--charcoal); 
+    color: var(--cream); 
+    font-family: 'Work Sans', sans-serif; 
+    line-height: 1.5;
+  }
+  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: -0.01em; }
+
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 6vw; background: rgba(34, 32, 28, 0.95);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+  }
+  .brand { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.1rem; }
+  .brand span { color: var(--rust-light); }
+  .tag { font-size: 0.72rem; color: var(--sand); opacity: 0.8; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .hero {
+    padding: 60px 6vw;
+    background: radial-gradient(circle at 50% 50%, #2c2924 0%, var(--charcoal) 100%);
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-content { max-width: 820px; margin: 0 auto; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px; font-size: 0.75rem; 
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--rust-light); margin-bottom: 18px;
+  }
+  .eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--rust-light); }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 16px; }
+  .hero h1 em { font-style: italic; color: var(--sand); }
+  .hero p { max-width: 560px; font-size: 1.05rem; color: rgba(244,239,226,0.85); }
+
+  section.block { padding: 60px 6vw; max-width: 900px; margin: 0 auto; }
+  .kicker { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rust-light); margin-bottom: 14px; }
+  .block h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.2; }
+  .block .lede { margin-top: 16px; color: rgba(244,239,226,0.75); font-size: 1rem; }
+
+  footer { 
+    padding: 60px 6vw; border-top: 1px solid var(--line); text-align: center;
+    background: linear-gradient(180deg, transparent, rgba(169,84,47,0.06)); 
+  }
+  .cta-row { margin-top: 30px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn { padding: 14px 30px; font-size: 0.9rem; text-decoration: none; border: 1px solid var(--cream); color: var(--cream); border-radius: 4px; }
+  .btn.primary { background: var(--rust-light); border-color: var(--rust-light); }
+  footer .foot-brand { margin-top: 40px; font-size: 0.78rem; color: rgba(244,239,226,0.4); letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">Starry's<span>·</span>Services</div>
+  <div class="tag">Construction · Maintenance · Carpentry</div>
+</div>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Project Proposal</div>
+    <h1>For Joy — <em>The Skirting Upgrade</em></h1>
+    <p>A comprehensive overview of options, materials, and designs tailored for your home improvement project.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="kicker">Overview</div>
+  <h2>Quality Craftsmanship & Clean Lines</h2>
+  <p class="lede">We focus on high-durability materials and seamless installation to elevate the overall look and thermal protection of your space.</p>
+</section>
+
+<footer>
+  <h2>Ready to get started?</h2>
+  <div class="cta-row">
+    <a href="#" class="btn primary">Accept Proposal</a>
+    <a href="#" class="btn">Request Changes</a>
+  </div>
+  <div class="foot-brand">Starry's Services © 2026</div>
+</footer>
+
+</body>
+</html>
